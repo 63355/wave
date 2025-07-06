@@ -42,7 +42,7 @@ for(uint16_t i=0; i<BUFFER_SIZE/4; i++)
 ```
 由于buffer_copy和buffer_dma数组的类型是uint8_t，连接器按照自然对其不会让他4字节对齐，但是我们这里强转为uint32_t去访问的话4字节对齐的地址效率相对没有4字节对齐的效率要高，所以需要根据指定编译器去将buffer_copy和buffer_dma的地址4字节对齐。
 这种方法虽然效率是第一种的4倍，但是本质上还是要CPU搬运，在cpu性能不高的场景下搬运大块数据还是很慢，引入第三种解决方法，使用dma
-- 使用dma搬运
+- 使用dma搬运   
 为了充分利用H7上的DMA，使用MTM模式，开启满的FIFO和满的burst,
 源地址和目标地址的宽度都设为WORD，所起也是需要buffer_copy和buffer_dma这两个uint8_t类型的数据的首地址需要人为的强制4字节对齐以达到最大效率
 ```c
