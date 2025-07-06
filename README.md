@@ -37,7 +37,7 @@ for(uint16_t i=0; i<BUFFER_SIZE; i++)
 ```c
 for(uint16_t i=0; i<BUFFER_SIZE/4; i++)
 {
-    *(uint32_t*)(buffer_copy + i) = *(uint32_t*)(buffer_dma + i);
+    *((uint32_t*)buffer_copy + i) = *((uint32_t*)buffer_dma + i);
 }
 ```
 由于buffer_copy和buffer_dma数组的类型是uint8_t，连接器按照自然对其不会让他4字节对齐，但是我们这里强转为uint32_t去访问的话4字节对齐的地址效率相对没有4字节对齐的效率要高，所以需要根据指定编译器去将buffer_copy和buffer_dma的地址4字节对齐。
