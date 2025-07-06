@@ -1,0 +1,76 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 peng, 2, LIC=JDA0P-M8S5J-UMX9A-1N6XZ-Z0PQL-8LNCI
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.34.0.0
+Toolchain Path:  D:\Keil5\instal\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.13.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\peng\Desktop\wave\MDK-ARM\wave.uvprojx
+Project File Date:  06/27/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Keil5\instal\ARM\ARMCLANG\Bin'
+Build target 'wave'
+../Core/Src/main.c(94): warning: implicitly declaring library function 'abs' with type 'int (int)' [-Wimplicit-function-declaration]
+            if (abs(dy) > 1) {
+                ^
+../Core/Src/main.c(94): note: include the header <stdlib.h> or explicitly provide a declaration for 'abs'
+1 warning generated.
+compiling main.c...
+linking...
+Program Size: Code=37600 RO-data=3504 RW-data=128 ZI-data=57680  
+FromELF: creating hex file...
+After Build - User command #1: C:\Users\peng\Desktop\wave\MDK-ARM\Keil5_disp_size_bar_v0.3.exe
+[Keil5_disp_size_bar V0.3]: start find map file
+[Keil5_disp_size_bar V0.3]: Found:C:\Users\peng\Desktop\wave\MDK-ARM\wave\wave.map
+[Keil5_disp_size_bar V0.3]: found end
+ram:
+  128 KB   ram1:|____________________|  0.00 % (    0.00 KB /   128.00 KB) [131072 B]
+  512 KB   ram2:|¡ö¡ö__________________| 11.03 % (   56.45 KB /   512.00 KB) [466480 B]
+flash:
+  128 KB flash1:|¡ö¡ö¡ö¡ö¡ö¡ö______________| 31.36 % (   40.14 KB /   128.00 KB) [89968 B]
+ 
+"wave\wave.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32H7xx_DFP.3.0.0.pack
+                Keil.STM32H7xx_DFP.3.0.0
+                STMicroelectronics STM32H7 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_wave
+  D:\Keil5\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Keil5\Packs\Keil\STM32H7xx_DFP\3.0.0\Drivers\CMSIS\Device\ST\STM32H7xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
