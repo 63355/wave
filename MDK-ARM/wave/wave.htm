@@ -3,7 +3,7 @@
 <title>Static Call Graph - [wave\wave.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image wave\wave.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Fri Jul  4 00:23:01 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Sun Jul  6 15:41:54 2025
 <BR><P>
 <H3>Maximum Stack Usage =        376 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1871,9 +1871,9 @@ Global Symbols
 <P><STRONG><a name="[167]"></a>button_init</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, button_user.o(.text.button_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = button_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
-<LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buttonLink
+<BR>[Calls]<UL><LI><a href="#[169]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buttonLink
 <LI><a href="#[168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;buttonInit
+<LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1895,7 +1895,7 @@ Global Symbols
 <P><STRONG><a name="[a3]"></a>longPressHandler</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, button_user.o(.text.longPressHandler))
 <BR>[Address Reference Count : 1]<UL><LI> button_user.o(.text.button_init)
 </UL>
-<P><STRONG><a name="[c8]"></a>main</STRONG> (Thumb, 812 bytes, Stack size 8 bytes, main.o(.text.main))
+<P><STRONG><a name="[c8]"></a>main</STRONG> (Thumb, 748 bytes, Stack size 8 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 376 + Unknown Stack Size
 <LI>Call Chain = main &rArr; MX_ADC1_Init &rArr; HAL_ADC_Init &rArr; HAL_ADC_MspInit &rArr; HAL_RCCEx_PeriphCLKConfig &rArr; RCCEx_PLL3_Config
 </UL>
